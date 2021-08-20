@@ -1,3 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+from pages import views
+
+
+
+def home(request):
+    
+    context = {
+            }
+
+    return render(request, 'sign-in/index.html', context)
